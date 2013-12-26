@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.tar.gz",
+				"*.egg"
+			],
+			"folder_exclude_patterns":
+			[
+				".tox",
+				"*.egg-info",
+				"dist"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}
