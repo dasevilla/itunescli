@@ -14,7 +14,7 @@ class ITunesApp(App):
             description='Query the iTunes search API',
             version='0.1.0',
             command_manager=CommandManager('itunescli'),
-            )
+        )
 
 
 def main(argv=sys.argv[1:]):
