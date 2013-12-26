@@ -47,8 +47,7 @@ class SearchLister(Lister, ITunesSearchBase):
         parser.add_argument('--limit', default=100, type=int)
         return parser
 
-    def get_data(self, parsed_args):
-
+    def take_action(self, parsed_args):
         results = itunes.Search(query=parsed_args.query,
             limit=parsed_args.limit,
             country=parsed_args.country,
@@ -70,8 +69,7 @@ class SearchOne(ShowOne, ITunesSearchBase):
         parser = self.config_parser(parser)
         return parser
 
-    def get_data(self, parsed_args):
-
+    def take_action(self, parsed_args):
         results = itunes.Search(query=parsed_args.query,
             limit=1,
             country=parsed_args.country,
@@ -103,8 +101,7 @@ class GetArtwork(Command, ITunesSearchBase):
         parser = self.config_parser(parser)
         return parser
 
-    def run(self, parsed_args):
-
+    def take_action(self, parsed_args):
         results = itunes.Search(query=parsed_args.query,
             limit=1,
             country=parsed_args.country,
