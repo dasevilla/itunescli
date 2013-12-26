@@ -33,7 +33,7 @@ class ITunesSearchBase(object):
 
     def artwork_url(self, artwork):
         """Return the largest artwork URL possible"""
-        return artwork['100'].replace('.100x100-75', '.400x400-75')
+        return artwork['100'].replace('.100x100-75', '.300x300-75')
 
 
 class SearchLister(Lister, ITunesSearchBase):
