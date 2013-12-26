@@ -13,22 +13,23 @@ Usage
 
 ::
 
-    usage: itunes [--version] [-v] [-q] [-h] [--debug]
+    usage: itunescli [--version] [-v] [--log-file LOG_FILE] [-q] [-h] [--debug]
 
     Query the iTunes search API
 
     optional arguments:
-    --version      show program's version number and exit
-    -v, --verbose  Increase verbosity of output. Can be repeated.
-    -q, --quiet    suppress output except warnings and errors
-    -h, --help     show this help message and exit
-    --debug        show tracebacks on errors
+      --version            show program's version number and exit
+      -v, --verbose        Increase verbosity of output. Can be repeated.
+      --log-file LOG_FILE  Specify a file to log output. Disabled by default.
+      -q, --quiet          suppress output except warnings and errors
+      -h, --help           show this help message and exit
+      --debug              show tracebacks on errors
 
     Commands:
-    artwork        Get the album artwork from the first result of a query
-    help           print detailed help for another command
-    search         Search iTunes
-    show           Show the first result from a search query
+      artwork        Get the album artwork from the first result of a query
+      help           print detailed help for another command
+      search         Search iTunes
+      show           Show the first result from a search query
 
 
 Developing
