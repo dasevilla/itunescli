@@ -1,19 +1,18 @@
+==========
+iTunes CLI
+==========
+
 Command-line interface to query the `iTunes Search API
 <http://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-
 web-service-search-api.html>`_. Relies on the `python-itunes
 <http://pypi.python.org/pypi/python-itunes>`_ and `cliff
 <http://pypi.python.org/pypi/cliff>`_ libraries.
 
-==================
- Running itunescli
-==================
-
 Usage
------
+=====
 
 ::
 
-    $ itunes -h
     usage: itunes [--version] [-v] [-q] [-h] [--debug]
 
     Query the iTunes search API
@@ -30,3 +29,16 @@ Usage
     help           print detailed help for another command
     search         Search iTunes
     show           Show the first result from a search query
+
+
+Developing
+==========
+
+::
+
+  $ mkvirtualenv itunescli
+  $ git clone git://github.com/dasevilla/itunescli.git itunescli
+  $ cd itunescli
+  $ pip install -r requirements.txt
+  $ python setup.py develop
+  $ tox # Test source using pep8, pyflakes

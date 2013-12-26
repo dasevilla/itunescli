@@ -12,8 +12,8 @@ class ITunesApp(App):
     def __init__(self):
         super(ITunesApp, self).__init__(
             description='Query the iTunes search API',
-            version='0.1',
-            command_manager=CommandManager('itunes.search'),
+            version='0.1.0',
+            command_manager=CommandManager('itunescli'),
             )
 
 
